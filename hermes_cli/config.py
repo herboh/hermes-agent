@@ -1530,6 +1530,13 @@ OPTIONAL_ENV_VARS = {
         "password": False,
         "category": "messaging",
     },
+    "MATTERMOST_REQUIRE_MENTION_CHANNELS": {
+        "description": "Comma-separated Mattermost channel IDs where bot always requires @mention (even when require_mention is false)",
+        "prompt": "Require-mention channel IDs (comma-separated)",
+        "url": None,
+        "password": False,
+        "category": "messaging",
+    },
     "MATRIX_HOMESERVER": {
         "description": "Matrix homeserver URL (e.g. https://matrix.example.org)",
         "prompt": "Matrix homeserver URL",
@@ -1569,6 +1576,14 @@ OPTIONAL_ENV_VARS = {
     "MATRIX_FREE_RESPONSE_ROOMS": {
         "description": "Comma-separated Matrix room IDs where bot responds without @mention",
         "prompt": "Free-response room IDs (comma-separated)",
+        "url": None,
+        "password": False,
+        "category": "messaging",
+        "advanced": True,
+    },
+    "MATRIX_REQUIRE_MENTION_ROOMS": {
+        "description": "Comma-separated Matrix room IDs where bot always requires @mention (even when require_mention is false)",
+        "prompt": "Require-mention room IDs (comma-separated)",
         "url": None,
         "password": False,
         "category": "messaging",

@@ -291,6 +291,7 @@ Add this to `~/.hermes/config.yaml`:
 ```yaml
 telegram:
   require_mention: true
+  require_mention_chats: []       # Chat IDs that always require @mention
   mention_patterns:
     - "^\\s*chompy\\b"
   ignored_threads:
